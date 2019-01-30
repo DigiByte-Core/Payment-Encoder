@@ -1,7 +1,7 @@
 {
-  "name": "cc-payment-encoder",
+  "name": "digiasset-payment-encoder",
   "version": "1.0.1",
-  "description": "The encoding/decoding functions for the colored-coins payment object scheme ",
+  "description": "The encoding/decoding functions for the digiasset payment object scheme ",
   "main": "paymentEncoder.js",
   "dependencies": {
     "sffc-encoder": "^0.1.9"
@@ -23,6 +23,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Colored-Coins/Payment-Encoder.git"
+    "url": "https://github.com/DigiByte-Core/Payment-Encoder.git"
   }
 }
