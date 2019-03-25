@@ -3,12 +3,12 @@
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-Payment-Encoder provides the encode/decode functions between a Colored Coins payment Object to buffer
+Payment-Encoder provides the encode/decode functions between a DigiAsset payment Object to buffer
 
 ### Installation
 
 ```sh
-$ npm install cc-payment-encoder
+$ npm install digiasset-payment-encoder
 ```
 
 
@@ -16,7 +16,7 @@ $ npm install cc-payment-encoder
 
 Params:
 
-- paymentObject - A standard Colored Coins payment object with the following properties:
+- paymentObject - A standard DigiAsset payment object with the following properties:
 
 ```js
 {
@@ -43,7 +43,7 @@ Returns a new Buffer holding the encoded payment.
 ##### Example:
 
 ```js
-var paymentEncode = require('cc-payment-encoder')
+var paymentEncode = require('digiasset-payment-encoder')
 var paymentObject = {
     skip: false,
     range: false,
@@ -63,12 +63,12 @@ Params:
 
 - consume - takes a consumable buffer (You can use [buffer-consumer] like in the example to create one)
 
-Returns a Colored Coins payment Object
+Returns a DigiAsset payment Object
 
 ##### Example:
 
 ```js
-var paymentEncode = require('cc-payment-encoder')
+var paymentEncode = require('digiasset-payment-encoder')
 var consumer = require('buffer-consumer')
 
 var decode = paymentEncode.decode(consumer(code))
@@ -90,7 +90,7 @@ console.log(paymentEncode.decode(consumer(codeBuffer)))
 In order to test you need to install [mocha] globaly on your machine
 
 ```sh
-$ cd /"module-path"/cc-payment-Encoder
+$ cd /"module-path"/digiasset-payment-Encoder
 $ mocha
 ```
 
